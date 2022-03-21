@@ -1,0 +1,106 @@
+@import "./../../index.scss";
+
+.sobremi_wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  aside {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    top: 10em;
+    left: 0;
+    bottom: 0;
+    .imagenes {
+      position: relative;
+      .logo {
+          position: absolute;
+          bottom: -1em;
+          left: 0;
+          right: 0;
+          margin: auto;
+        width: 65px;
+      }
+    }
+  }
+  .bloque {
+    width: 30em;
+  }
+  .sobremi_info {
+    margin-top: 3em;
+    width: calc(68% - 5em);
+    height: 90%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    p {
+      padding-bottom: 2em;
+    }
+    .cards{
+      display: flex;
+      justify-content: space-evenly;
+    }
+  }
+}
+
+.img_sobremi {
+  width: 250px;
+  height: auto; /* container height - (border thickness * 2) */
+  clip-path: circle(50% at 50% 50%);
+
+  border-radius: 50%;
+}
+
+@media (max-width: $breakpoint) {
+  .sobremi_wrapper {
+    overflow-x: hidden;
+    flex-direction: column;
+    aside {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 0;
+      top: 1.2em;
+      right: 0;
+      left: 12em;
+      margin: auto;
+      bottom: auto;
+      height: 35%;
+      width: 174px;
+    }
+    .bloque {
+      width: 0em;
+      height: 20em;
+    }
+    .sobremi_info {
+      margin-top: 4em;
+      width: 90%;
+      height: auto;
+      overflow-y: initial;
+
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: column;
+
+      p {
+        padding-bottom: 1.6em;
+      }
+      .cards{
+        font-size: smaller;
+      }
+    }
+  }
+
+  .img_sobremi {
+    width: 120px;
+  }
+}

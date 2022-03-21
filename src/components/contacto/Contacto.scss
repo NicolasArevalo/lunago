@@ -1,0 +1,121 @@
+@import "./../../index.scss";
+
+.contacto_wrapper {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  .contacto_contenido {
+    position: absolute;
+    bottom: 0;
+    left: 25em;
+    right: 5em;
+
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .c_c {
+      display: flex;
+      position: relative;
+      flex-grow: 1;
+      justify-content: center;
+      align-items: center;
+      & h1 {
+        position: absolute;
+        transform: rotate(270deg) translateY(-0.7em);
+        height: max-content;
+        width: max-content;
+        font-size: 4.5em;
+      }
+      .contacto_iconos {
+        display: flex;
+        flex-flow: column wrap;
+        gap: 2em;
+        align-items: center;
+        z-index: 5;
+      }
+    }
+    .correo {
+      position: absolute;
+      bottom: 2em;
+      left: 0;
+      right: 0;
+      text-align: center;
+      transition: all .3s;
+      &::after{
+        content: '';
+        width: 0;
+        height: 3px;
+        background-color: $negro;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        display: inline;
+        transition: all .3s;
+      }
+      &:hover::after{        
+        width: 170px;        
+      }
+    }
+  }
+}
+.icono {
+  font-size: 5em;
+  transition: all .3s;
+  &:hover{
+    transform: scale(1.1);
+  }
+}
+
+.letrasPalidas {
+  opacity: 0.2;
+}
+
+@media (max-width: $breakpoint) {
+  .contacto_wrapper {
+    .contacto_contenido {
+      position: absolute;
+      bottom: 5em;
+      left: 1em;
+      right: 1em;
+
+      height: 70%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .c_c {
+        display: flex;
+        position: relative;
+        flex-grow: 1;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        & h1 {
+          position: absolute;
+          transform: rotate(0deg) translateY(-0.5em);
+          height: max-content;
+          width: max-content;
+          font-size: 3.5em;
+        }
+        .contacto_iconos {
+          display: flex;
+          flex-flow: row wrap;
+          gap: 3em;
+        }
+      }
+      .correo {
+        position: absolute;
+        bottom: -1em;
+        left: 0;
+        right: 0;
+        text-align: center;
+      }
+    }
+  }
+  .icono {
+    font-size: 3em;
+  }
+}

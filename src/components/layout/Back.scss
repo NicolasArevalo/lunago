@@ -1,0 +1,51 @@
+@import "./../../index.scss";
+
+.back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+  
+    width: 25em;
+    height: 25%;
+  
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    
+  
+    background: $blanco;
+    border: $borde;
+  
+    transform: translate(-2px, -2px); //Para quitarles el borde arriba y a la izquierda negro xD
+  
+    z-index: 2;
+  
+    & svg{
+      font-size: 2em;
+    }
+}
+.flechita{
+  transition: all .3s;
+}
+.flechita:hover{
+    animation: moveLeft 1.5s infinite linear alternate ;
+}
+@keyframes moveLeft {
+  to{
+    transform: translateX(-8px);
+  }
+}
+
+@media (max-width: $breakpoint){
+    .back{
+      width: 174px;
+      height: 20%;
+      flex-direction: column;
+      justify-content: center;
+      gap: 1.2em;
+      & h1{
+        font-size: 1.1em;
+      }
+    }
+  }

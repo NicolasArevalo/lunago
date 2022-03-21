@@ -1,0 +1,130 @@
+@import "./../../index.scss";
+
+.diseno_wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  position: relative;
+
+  aside {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    top: 10em;
+    left: 3em;
+    bottom: 0;
+    width: 350px;
+
+    .herramientas_inside {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1em;
+      .icon {
+        width: 75px;
+        font-size: 5em;
+      }
+    }
+  }
+  .bloque {
+    width: 40em;
+  }
+  .diseno_content {
+    margin: 7em 0;
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    .diseno_content-items {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+      .content_carousel {
+        display: flex;
+        justify-self: center;
+        flex-flow: row wrap;
+        margin-left: 3em;
+        gap: 2.5em;
+        width: 95%;
+        .carousel_item {
+          overflow: hidden;
+          min-width: 230px;
+          max-width: 230px;
+          height: 210px;
+
+          border: 2px solid $negro;
+          cursor: pointer;
+          display: flex;
+          flex-direction: row;
+          
+          text-align: center;
+          flex-flow: column wrap;
+          justify-content: space-evenly;
+          img {
+            width: 100%;
+            height: 120px;
+          }
+          .ilustracion{
+              height: auto;
+              width: 100%;
+          }
+          p {
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: $breakpoint) {
+  .diseno_wrapper {
+    overflow-x: hidden;
+    flex-wrap: wrap;
+    justify-content: center;
+    aside {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 2em;
+      top: 2em;
+      right: 0;
+      left: 12em;
+      margin: auto;
+      bottom: auto;
+
+      width: 174px;
+      .herramientas_inside {
+        .icon {
+          width: 53px;
+          font-size: 3.4em;
+        }
+      }
+    }
+    .bloque {
+      width: 100px;
+      height: 200px;
+    }
+    .diseno_content {
+        margin-top: 0em;
+        width: 90%;
+        gap: 1.5em;
+        .diseno_content-items{
+          .content_carousel{
+            margin-left: .6em;
+            flex-wrap: nowrap;
+            overflow: scroll;
+            gap: 0em;
+            .carousel_item{
+              transform: scale(.8);
+            }
+          }
+        }
+      }
+  }
+}

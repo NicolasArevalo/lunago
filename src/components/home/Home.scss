@@ -1,0 +1,76 @@
+@import "./../../index.scss";
+.home_wrapper {
+  h1{
+    transition: all .3s;
+  }
+  
+  h1:hover{
+    text-shadow:  1px 7px 8px #c4c4c4;
+  }
+  .logo{
+    width: 2.5em;
+
+    position: absolute;
+    top: .5em;
+    left: .5em;
+  }
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    .grouno {
+      flex-grow: 1;
+    }
+    .grodos {
+      flex-grow: 2;
+    }
+    .item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: $borde;
+    }
+  }
+}
+/* On hover */
+
+
+/* PHONE VIEW */
+
+@media (max-width: $breakpoint) {
+  .home_wrapper {
+    flex-wrap: wrap;
+    .agrandarse50 {
+      flex-grow: 0;
+      width: 50%;
+      height: 75%;
+    }
+    .palpiso {
+        height: 25%;
+      flex-direction: row;
+      flex-grow: 1;
+      & > .item {
+        width: 50%;
+      }
+    }
+    .column {
+      .adelante {
+        order: -1;
+      }
+      .item {
+        a {
+          h1 {
+            font-size: larger;
+          }
+          .masChiqui{
+              font-size: large;
+          }
+        }
+      }
+    }
+  }
+}

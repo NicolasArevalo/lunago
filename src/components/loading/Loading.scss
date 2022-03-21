@@ -1,0 +1,21 @@
+@import "./../../index.scss";
+
+.bg{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    img{
+        margin: auto;
+        height: 150px;
+        animation: beats 3s infinite alternate ease;
+    }
+}
+
+@keyframes beats{
+    from{
+        transform: scale(.9);
+    }
+    to{
+        transform: scale(1.1);
+    }
+}

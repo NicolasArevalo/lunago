@@ -1,0 +1,17 @@
+@import "./../../index.scss";
+
+.bg{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    .inside{
+        margin: auto;
+        text-align: center;
+        width: 70%;
+        a{
+            
+            text-decoration: underline;
+        }
+    }
+}

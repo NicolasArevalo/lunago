@@ -1,0 +1,179 @@
+@import "./../../index.scss";
+.icon_wrapper{
+    position: absolute;
+    left: -3em;
+    display: flex;
+    flex-direction: column;
+    svg{
+        transform: scale(.7);
+        transition: all .3s;
+        &:hover{
+          transform: scale(.8);
+        }
+    }
+}
+.left{
+    left: -2.4em;
+}
+
+.nopointer{
+  cursor: default!important;
+}
+
+.voz_wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  position: relative;
+
+  aside {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    top: 10em;
+    left: 3em;
+    bottom: 0;
+    width: 350px;
+    .herramientas_inside {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1em;
+      .icon {
+        width: 75px;
+        font-size: 5em;
+        
+      }
+    }
+  }
+  .bloque {
+    width: 40em;
+  }
+  .voz_content {
+    margin: 5em 0;
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    .voz_content-carousel {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      width: 80%;
+    }
+    .voz_content-items {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+      position: relative;
+      .content_carousel {
+        display: flex;
+        justify-self: center;
+        flex-flow: row wrap;
+        margin-left: 3em;
+        gap: 2.5em;
+        width: 80%;
+        .carousel_item {
+          overflow: hidden;
+          min-width: 230px;
+          max-width: 230px;
+          height: 210px;
+          border: 2px solid $negro;
+          display: flex;
+          flex-direction: row;
+          text-align: center;
+          flex-flow: column wrap;
+          justify-content: space-evenly;
+
+          cursor: pointer;
+          .podcastImg{
+              height: auto;
+          }
+          img {
+            width: 100%;
+            height: 140px;
+          }
+          .ilustracion {
+            height: auto;
+            width: 100%;
+          }
+          p {
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint) {
+    .icon_wrapper{
+        position: absolute;
+        left: -1em;
+        /* top: 6em; */
+        svg{
+            transform: scale(.5);
+            &:hover{
+              transform: scale(.6);
+            }
+        }
+    }
+    .left{
+        left: -.5em;
+    }
+    .voz_wrapper {
+      overflow-x: hidden;
+      flex-wrap: wrap;
+      justify-content: center;
+      aside {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1.2em;
+        top: 2em;
+        right: 0;
+        left: 12em;
+        margin: auto;
+        bottom: auto;
+  
+        width: 174px;
+        .herramientas_inside {
+          .icon {
+            width: 53px;
+            font-size: 3.4em;
+          }
+        }
+      }
+      .bloque {
+        width: 100px;
+        height: 200px;
+      }
+      .voz_content {
+          margin-top: 0em;
+          width: 90%;
+          gap: 1.5em;
+          .voz_content-items{
+            .content_carousel{
+              margin-left: 3em;
+              flex-wrap: nowrap;
+              overflow-x: auto;
+              gap: 0em;
+              .carousel_item{
+                transform: scale(.8);
+              }
+            }
+          }
+          .voz_content-carousel{
+              flex-direction: column;
+              gap: 1em;
+              width: 90%;
+          }
+        }
+    }
+  }
