@@ -19,6 +19,10 @@
 .nopointer{
   cursor: default!important;
   background-color: #fff;
+  height: max-content!important;
+  img{
+    outline: none!important;
+  }
 }
 
 .voz_wrapper {
@@ -97,6 +101,7 @@
           img {
             width: 100%;
             height: 140px;
+            outline: $outlain;
           }
           .ilustracion {
             height: auto;

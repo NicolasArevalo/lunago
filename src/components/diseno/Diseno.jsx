@@ -72,8 +72,8 @@ const Diseno = () => {
               </div>
             </a>
             <a href={links.diseno+'#090d8e596b52464496896995ab946b3c'}>
-              <div className="carousel_item hoverTarjeta" >
-                <img src={sastreria} alt="movies app" className='ilustracion' />
+              <div className="carousel_item hoverTarjeta sastreria" >
+                <img src={sastreria} alt="movies app" className='ilustracion ' />
               </div>
             </a>
             <a href={links.diseno+'#090d8e596b52464496896995ab946b3c'}>

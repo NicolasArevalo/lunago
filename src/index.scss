@@ -16,7 +16,7 @@ code {
 /* VARIABLES */
 
 $blanco: white;
-$negro: rgb(39, 39, 39);
+$negro: rgb(46, 46, 46);
 $gris: gray;
 $sombra: rgba(0, 0, 0, 0.24);
 
@@ -40,7 +40,7 @@ $sombra--oscuro: rgba(255, 255, 255, 0.24);
 }
 
 $borde: 3px solid var(--negro);
-
+$outlain: 2px solid $negro;
 $iconoSm: 24px;
 $iconoMid: 50px;
 $iconoBig: 100px;
