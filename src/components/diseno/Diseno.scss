@@ -23,9 +23,12 @@
       justify-content: center;
       align-items: center;
       gap: 1em;
+      background-color: #fff;
+      padding: 1em;
       .icon {
         width: 75px;
         font-size: 5em;
+        color: $negro;
       }
     }
   }
@@ -56,7 +59,7 @@
           max-width: 230px;
           height: 210px;
 
-          border: 2px solid $negro;
+          border: 2px solid var(--negro);
           cursor: pointer;
           display: flex;
           flex-direction: row;
@@ -100,9 +103,10 @@
 
       width: 174px;
       .herramientas_inside {
+        
         .icon {
-          width: 53px;
-          font-size: 3.4em;
+          width: 45px;
+          font-size: 2.8em;
         }
       }
     }
@@ -121,6 +125,7 @@
             overflow: scroll;
             gap: 0em;
             .carousel_item{
+              /* background-color: gray; */
               transform: scale(.8);
             }
           }

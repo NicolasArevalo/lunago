@@ -14,7 +14,7 @@
     align-items: center;
     
   
-    background: $blanco;
+    background: var(--blanco);
     border: $borde;
   
     transform: translate(-2px, -2px); //Para quitarles el borde arriba y a la izquierda negro xD
@@ -23,6 +23,7 @@
   
     & svg{
       font-size: 2em;
+      color: var(--negro);
     }
 }
 .flechita{

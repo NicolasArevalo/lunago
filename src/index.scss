@@ -6,6 +6,7 @@ body {
     "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: var(--blanco);
 }
 
 code {
@@ -15,10 +16,30 @@ code {
 /* VARIABLES */
 
 $blanco: white;
-$negro: black;
+$negro: rgb(39, 39, 39);
 $gris: gray;
+$sombra: rgba(0, 0, 0, 0.24);
 
-$borde: 3px solid $negro;
+/* Variables modo oscuro */
+$blanco--oscuro: rgb(39, 39, 39);
+$negro--oscuro: rgb(219, 219, 219);
+$sombra--oscuro: rgba(255, 255, 255, 0.24);
+
+/* Temas */
+.theme {
+  --blanco: #{$blanco};
+  --negro: #{$negro};
+  --gris: #{$gris};
+  --sombra: #{$sombra};
+  &--dark {
+    --blanco: #{$blanco--oscuro};
+    --negro: #{$negro--oscuro};
+    --gris: #{$gris};
+    --sombra: #{$sombra--oscuro};
+  }
+}
+
+$borde: 3px solid var(--negro);
 
 $iconoSm: 24px;
 $iconoMid: 50px;
@@ -29,17 +50,17 @@ $iconoBig: 100px;
 a {
   color: inherit;
   text-decoration: none;
-  -webkit-tap-highlight-color: rgba(216, 13, 13, 0); 
+  -webkit-tap-highlight-color: rgba(216, 13, 13, 0);
   &:visited {
     color: inherit;
   }
 }
 
 .hoverTarjeta {
-  transition: all .3s;
-  &:hover{
-    -webkit-box-shadow: 7px 14px 13px -4px rgba(0, 0, 0, 0.24);
-    box-shadow: 7px 14px 13px -4px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s;
+  &:hover {
+    -webkit-box-shadow: 7px 14px 13px -4px var(--sombra);
+    box-shadow: 7px 14px 13px -4px var(--sombra);
   }
 }
 
@@ -50,12 +71,28 @@ h4 {
   margin: 0;
   padding: 0;
   font-weight: 900;
+  color: var(--negro);
+}
+p{
+  color: var(--negro)
 }
 
 span {
   font-size: 0.8em;
   font-style: italic;
-  color: $gris;
+  color: var(--gris);
+}
+
+aside{
+  svg{
+    color: var(--negro);
+  }
+}
+svg{
+  color: var(--negro);
+}
+li{
+  color: var(--negro);
 }
 
 /* MEDIAQUERYS */

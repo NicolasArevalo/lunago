@@ -5,12 +5,15 @@ import Frases from "./Frases";
 import "./SobreMi.scss";
 
 import yo from "../../assets/fondoblancoyo-01.png";
-import logo from "../../assets/NAicon-01.svg"
+import loguito from "../../assets/NAicon-01.svg"
+import loguitoBlanco from "../../assets/NAiconWhite.svg"
 
 /* Import Animaciones */
 import { useSpring, a } from 'react-spring'
 
 const SobreMi = () => {
+  const body = document.getElementById('body')
+  const darkClassExist = body.classList[1]
   /* Animaciones */
   const props = useSpring({ to: { opacity: 1 }, from: { opacity: 0 } })
   const imgStyle = useSpring({
@@ -27,8 +30,12 @@ const SobreMi = () => {
       <Back name="SOBRE MÍ" />
       <aside>
         <div className="imagenes">
-          <a.img  style={imgStyle} src={yo} alt="Selfie de Nico" className="img_sobremi" />
-          <img src={logo} alt="logo" className="logo" />
+          <a.img style={imgStyle} src={yo} alt="Selfie de Nico" className="img_sobremi" />
+          {
+            darkClassExist !== undefined
+              ? <img src={loguitoBlanco} alt="logo" className="logo" />
+              : <img src={loguito} alt="logo" className="logo" />
+          }
         </div>
         <Frases />
       </aside>
@@ -38,12 +45,12 @@ const SobreMi = () => {
       <div className="sobremi_info">
         <div className="info-part cards">
           <div className='card'>
-              <h2>Hobbies</h2>
-              <ul>
-                <li>Cantar (sobre todo rapcitos)</li>
-                <li>Ver películas</li>
-                <li>Realmente me gusta aprender</li>
-              </ul>
+            <h2>Hobbies</h2>
+            <ul>
+              <li>Cantar (sobre todo rapcitos)</li>
+              <li>Ver películas</li>
+              <li>Realmente me gusta aprender</li>
+            </ul>
           </div>
           <div className="card">
             <h2>Top películas</h2>

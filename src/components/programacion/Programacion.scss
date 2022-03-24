@@ -50,7 +50,7 @@
         width: 250px;
         height: 230px;
 
-        border: 2px solid $negro;
+        border: 2px solid var(--negro);
 
         display: flex;
         align-items: center;
@@ -89,7 +89,7 @@
 
       width: 174px;
       .icon {
-        font-size: 3.4em;
+        font-size: 2.5em;
       }
     }
     .bloque {
