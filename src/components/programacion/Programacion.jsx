@@ -8,7 +8,7 @@ import './Programacion.scss'
 import links from './../../assets/links'
 
 /* Imágenes */
-import moviesImg from '../../assets/moviesApp.jpg'
+import climapp from '../../assets/climapp.jpg'
 import gifsImg from '../../assets/appGifs.jpg'
 import webAnteriorImg from '../../assets/portfoliomio.jpg'
 import sisFactuImg from '../../assets/sisFactu.jpg'
@@ -37,8 +37,8 @@ const Programacion = () => {
         <div className="proyectos_wrapper">
           <a href={links.proyectos+'#e3fc81a59c61459abb24b693919365b3'}>
             <div className="proyectos_item hoverTarjeta">
-              <img src={moviesImg} alt="proyecto movies" />
-              <p>App de películas</p>
+              <img src={climapp} alt="proyecto movies" />
+              <p>App del clima </p>
             </div>
           </a>
           <a href={links.proyectos+'#9dd934ef707c4e7696a58304b658c931'}>
