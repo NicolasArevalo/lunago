@@ -15,6 +15,7 @@ import sisFactuImg from '../../assets/sisFactu.jpg'
 
 /* Import Animaciones */
 import { useSpring, a } from 'react-spring'
+import Card from './card/Card'
 
 const Programacion = () => {
   /* Animaciones */
@@ -35,30 +36,16 @@ const Programacion = () => {
       <div className="pro_proyectos">
         <h1>Proyectos</h1>
         <div className="proyectos_wrapper">
-          <a href={links.proyectos+'#e3fc81a59c61459abb24b693919365b3'}>
+          {/* <a href={links.proyectos+'#e3fc81a59c61459abb24b693919365b3'}>
             <div className="proyectos_item hoverTarjeta">
               <img src={climapp} alt="proyecto movies" />
               <p>App del clima </p>
             </div>
-          </a>
-          <a href={links.proyectos+'#9dd934ef707c4e7696a58304b658c931'}>
-            <div className="proyectos_item hoverTarjeta">
-              <img src={gifsImg} alt="proyecto movies" />
-              <p>App de gifs</p>
-            </div>
-          </a>
-          <a href={links.proyectos+'#808161d1dcfe46f8810e5bd37a201f8a'}>
-            <div className="proyectos_item hoverTarjeta">
-              <img src={webAnteriorImg} alt="proyecto movies" />
-              <p>Mi página web anterior</p>
-            </div>
-          </a>
-          <a href={links.proyectos+'#a162fb2ca7954ac9a233f7134c3bf79b'}>
-            <div className="proyectos_item hoverTarjeta">
-              <img src={sisFactuImg} alt="proyecto movies" />
-              <p>Sistema de facturación</p>
-            </div>
-          </a>
+          </a> */}
+          <Card name="App del clima" source={climapp} link={links.proyectos+'#e3fc81a59c61459abb24b693919365b3'} link_web={'https://nicolasarevalo.github.io/climapp'}/>
+          <Card name="App de gifs" source={gifsImg} link={links.proyectos+'#e3fc81a59c61459abb24b693919365b3'} link_web={'https://nicolasarevalo.github.io/giphy-app'}/>
+          <Card name="Portfolio" source={webAnteriorImg} link={links.proyectos+'#e3fc81a59c61459abb24b693919365b3'} link_web={'https://nicolas-arevalo.netlify.app'}/>
+          <Card name="Sistema de facturación" source={sisFactuImg} link={links.proyectos+'#e3fc81a59c61459abb24b693919365b3'} link_web={'https://nicolasarevalo.github.io/sisFacturacion'}/>
         </div>
 
       </div>
