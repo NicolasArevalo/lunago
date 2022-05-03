@@ -14,6 +14,6 @@ const links = {
     believer: 'https://www.youtube.com/watch?v=hTv6dQF4BI4',
     maquiavelico: 'https://www.youtube.com/watch?v=H1jGtdc8FnE',
     proyectos: 'https://nicolasarevalo.notion.site/Proyectos-e3b2ae83a6e04d52b4060542f14827f2',
-    diseno: 'https://n9.cl/nicodiseno'
+    diseno: 'https://nicolasarevalo.notion.site/Mockups-2018cceb5bf342868edc5e8377d77a1a'
 }
 export default links;

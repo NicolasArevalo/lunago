@@ -12,7 +12,7 @@ import jokes from '../../assets/jokes.jpeg'
 import climapp from '../../assets/climapp.jpg'
 import gifsImg from '../../assets/appGifs.jpg'
 import webAnteriorImg from '../../assets/portfoliomio.jpg'
-import sisFactuImg from '../../assets/sisFactu.jpg'
+import explounas from '../../assets/explounas.jpg'
 
 /* Import Animaciones */
 import { useSpring, a } from 'react-spring'
@@ -37,12 +37,11 @@ const Programacion = () => {
       <div className="pro_proyectos">
         <h1>Proyectos</h1>
         <div className="proyectos_wrapper">
-          {/* <a href={links.proyectos+'#e3fc81a59c61459abb24b693919365b3'}>
-            <div className="proyectos_item hoverTarjeta">
-              <img src={climapp} alt="proyecto movies" />
-              <p>App del clima </p>
-            </div>
-          </a> */}
+          
+          <Card name="Explouñas website" source={explounas} 
+          link={links.proyectos+'#2104063847ed485db9d7c15da52455e7'} 
+          link_web={'https://explounas.vercel.app'}/>
+
           <Card name="App de insultos" source={jokes} 
           link={links.proyectos+'#d42c95250bb543d1b4e4405e190988fe'} 
           link_web={'https://jokes-na.vercel.app'}/>
@@ -58,10 +57,6 @@ const Programacion = () => {
           <Card name="Portfolio" source={webAnteriorImg} 
           link={links.proyectos+'#79c68b5f49bf42f894ea48e991d843a6'} 
           link_web={'https://nicolas-arevalo.netlify.app'}/>
-
-          {/* <Card name="Sistema de facturación" source={sisFactuImg} 
-          link={links.proyectos+'#e3fc81a59c61459abb24b693919365b3'} 
-          link_web={'https://nicolasarevalo.github.io/sisFacturacion'}/> */}
 
         </div>
 
