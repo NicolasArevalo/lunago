@@ -13,7 +13,7 @@ const links = {
     stressed: 'https://www.youtube.com/watch?v=ufnH9CAGcQs',
     believer: 'https://www.youtube.com/watch?v=hTv6dQF4BI4',
     maquiavelico: 'https://www.youtube.com/watch?v=H1jGtdc8FnE',
-    proyectos: 'https://n9.cl/nicoproyectos',
+    proyectos: 'https://nicolasarevalo.notion.site/Proyectos-e3b2ae83a6e04d52b4060542f14827f2',
     diseno: 'https://n9.cl/nicodiseno'
 }
 export default links;

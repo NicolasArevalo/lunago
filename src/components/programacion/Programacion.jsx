@@ -8,6 +8,7 @@ import './Programacion.scss'
 import links from './../../assets/links'
 
 /* Imágenes */
+import jokes from '../../assets/jokes.jpeg'
 import climapp from '../../assets/climapp.jpg'
 import gifsImg from '../../assets/appGifs.jpg'
 import webAnteriorImg from '../../assets/portfoliomio.jpg'
@@ -42,10 +43,26 @@ const Programacion = () => {
               <p>App del clima </p>
             </div>
           </a> */}
-          <Card name="App del clima" source={climapp} link={links.proyectos+'#e3fc81a59c61459abb24b693919365b3'} link_web={'https://nicolasarevalo.github.io/climapp'}/>
-          <Card name="App de gifs" source={gifsImg} link={links.proyectos+'#e3fc81a59c61459abb24b693919365b3'} link_web={'https://nicolasarevalo.github.io/giphy-app'}/>
-          <Card name="Portfolio" source={webAnteriorImg} link={links.proyectos+'#e3fc81a59c61459abb24b693919365b3'} link_web={'https://nicolas-arevalo.netlify.app'}/>
-          <Card name="Sistema de facturación" source={sisFactuImg} link={links.proyectos+'#e3fc81a59c61459abb24b693919365b3'} link_web={'https://nicolasarevalo.github.io/sisFacturacion'}/>
+          <Card name="App de insultos" source={jokes} 
+          link={links.proyectos+'#d42c95250bb543d1b4e4405e190988fe'} 
+          link_web={'https://jokes-na.vercel.app'}/>
+
+          <Card name="App del clima" source={climapp} 
+          link={links.proyectos+'#c07349267b9d4e3bb543f07dfc7fc5d6'} 
+          link_web={'https://nicolasarevalo.github.io/climapp'}/>
+
+          <Card name="App de gifs" source={gifsImg} 
+          link={links.proyectos+'#9dd934ef707c4e7696a58304b658c931'} 
+          link_web={'https://nicolasarevalo.github.io/giphy-app'}/>
+
+          <Card name="Portfolio" source={webAnteriorImg} 
+          link={links.proyectos+'#79c68b5f49bf42f894ea48e991d843a6'} 
+          link_web={'https://nicolas-arevalo.netlify.app'}/>
+
+          {/* <Card name="Sistema de facturación" source={sisFactuImg} 
+          link={links.proyectos+'#e3fc81a59c61459abb24b693919365b3'} 
+          link_web={'https://nicolasarevalo.github.io/sisFacturacion'}/> */}
+
         </div>
 
       </div>
