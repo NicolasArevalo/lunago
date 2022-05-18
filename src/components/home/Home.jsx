@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom"
+import { Link, Navigate } from "react-router-dom"
 
 import './Home.scss'
 import hv from './NicolasArevaloHV.pdf'
@@ -20,7 +20,6 @@ const Home = () => {
   const body = document.getElementById('body')
   const darkClassExist = body.classList[1]
   const [dark, setDark] = useState(darkClassExist !== undefined ? true : false);
-
 
   /* Animaciones */
   const props = useSpring({ to: { opacity: 1 }, from: { opacity: 0 } })
@@ -69,29 +68,29 @@ const Home = () => {
           : <FontAwesomeIcon icon={faMoon} className="icon" onClick={handleDark} />
       }
       <div className="column agrandarse50">
-        <div className="item grouno">
+        <div className="item grouno" onClick={() => window.location.href = 'https://nicolasarevalo.notion.site/Notas-de-Nico-d1b083b740b94c558292783c9f5e16c3'}>
           <a href="https://nicolasarevalo.notion.site/Notas-de-Nico-d1b083b740b94c558292783c9f5e16c3"> <a.h1 style={stylesRightLeft}>BLOG</a.h1> </a>
         </div>
-        <div className="item grouno" >
+        <div className="item grouno" onClick={() =>  window.location.href = 'https://nicolasarevalo.tk/sobremi'}>
           <Link to="/sobremi"><a.h1 style={stylesLeftRight}>SOBRE MÍ</a.h1></Link>
         </div>
       </div>
       <div className="column agrandarse50">
-        <div className="item grouno">
+        <div className="item grouno" onClick={() => window.location.href = 'https://nicolasarevalo.tk/diseno'}>
           <Link to="/diseno"><a.h1 style={stylesLeftRight}>DISEÑO</a.h1></Link>
         </div>
-        <div className="item grodos">
+        <div className="item grodos" onClick={() => window.location.href = 'https://nicolasarevalo.tk/programacion'}>
           <Link to="/programacion"><a.h1 className="masChiqui" style={stylesRightLeft}>PROGRAMACIÓN</a.h1></Link>
         </div>
-        <div className="item grouno">
+        <div className="item grouno" onClick={() => window.location.href = 'https://nicolasarevalo.tk/voz'}>
           <Link to="/voz"><a.h1 style={stylesLeftRight}>VOZ</a.h1></Link>
         </div>
       </div>
       <div className="column palpiso">
-        <div className="item grouno">
+        <div className="item grouno" onClick={() => window.location.href = 'https://nicolasarevalo.tk/contacto'}>
           <Link to="/contacto"><a.h1 style={stylesLeftRight}>CONTACTO</a.h1></Link>
         </div>
-        <div className="item grouno adelante">
+        <div className="item grouno adelante" onClick={() => window.open(`${hv}`, '_blank')}>
           <Link to="./"> <a.h1 className="masChiqui" style={stylesRightLeft} onClick={() => window.open(`${hv}`, '_blank')}>DESCARGA MI <br /> HOJA DE VIDA</a.h1> </Link>
         </div>
       </div>
