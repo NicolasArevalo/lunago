@@ -19,7 +19,7 @@ function App() {
   console.log('%c No manches, no mires la consola wtf. No hay nada que ver aquí.',
     'font-size: 20px; color: #FFF; background: red; padding: 10px;');
   console.log('%c..', 'font-size: 300px; height: 150px; width: 100px; background: url(https://media.giphy.com/media/AAsj7jdrHjtp6/giphy.gif) no-repeat; background-size: cover;');
-
+  
   return (
     <Router>
       <Suspense fallback={<Loading />}>
