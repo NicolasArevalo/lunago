@@ -68,11 +68,11 @@ const Home = () => {
           : <FontAwesomeIcon icon={faMoon} className="icon" onClick={handleDark} />
       }
       <div className="column agrandarse50">
-        <div className="item grouno" onClick={() => window.location.href = 'https://nicolasarevalo.notion.site/Notas-de-Nico-d1b083b740b94c558292783c9f5e16c3'}>
-          <a href="https://nicolasarevalo.notion.site/Notas-de-Nico-d1b083b740b94c558292783c9f5e16c3"> <a.h1 style={stylesRightLeft}>BLOG</a.h1> </a>
+        <div className="item grouno" onClick={() => window.location.href = 'https://nico.ghost.io'}>
+          <a href="https://nico.ghost.io"> <a.h1 style={stylesRightLeft}>BLOG</a.h1> </a>
         </div>
-        <div className="item grouno" onClick={() =>  window.location.href = 'https://nicolasarevalo.tk/sobremi'}>
-          <Link to="/sobremi"><a.h1 style={stylesLeftRight}>SOBRE MÍ</a.h1></Link>
+        <div className="item grouno" onClick={() =>  window.location.href = 'https://nico.ghost.io/about'}>
+          <Link to="https://nico.ghost.io/about"><a.h1 style={stylesLeftRight}>SOBRE MÍ</a.h1></Link>
         </div>
       </div>
       <div className="column agrandarse50">
