@@ -1,6 +1,6 @@
 const links = {
     youtube: 'https://www.youtube.com/channel/UCB59FB3tbDi4A4tSunooVoA',
-    notion: 'https://n9.cl/nicoblog',
+    notion: 'https://nico.ghost.io',
     instagram: 'https://www.instagram.com/_lunago28',
     twitter: 'https://twitter.com/lunago28',
     github: 'https://github.com/NicolasArevalo',
